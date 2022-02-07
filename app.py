@@ -1,5 +1,7 @@
 import os
+
 import requests
+
 
 def handler(event, context):
     token = os.getenv('TRENDAGRAM_TELEGRAM_TOKEN')
