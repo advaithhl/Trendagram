@@ -32,9 +32,4 @@ def get_trends():
     except tweepy.errors.TweepyException as tweepy_error:
         logging.error(tweepy_error)
     else:
-        return place_trends
-
-
-# Just print out the trends for now.
-all_trends = get_trends()
-print(all_trends[0]['trends'])
+        return place_trends[0]['trends']
